@@ -18,12 +18,12 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.6,<4.0
+    - python >=3.7,<4.0
   run:
-    - python >=3.6,<4.0
+    - python >=3.7,<4.0
     - cryptography
     - python-jose
-    - starlite >=1.16.0
+    - starlite >=1.24.0
 
 test:
   imports:
@@ -34,8 +34,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/starlite-api/jwt-auth
-  dev_url: https://starlite-api.github.io/starlite-jwt/
+  home: https://starlite-api.github.io/starlite-jwt/
+  dev_url: https://github.com/starlite-api/jwt-auth
   summary: A JWT auth toolkit for Starlite
   license: MIT
   license_file: LICENSE
