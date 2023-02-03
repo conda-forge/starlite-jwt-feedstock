@@ -1,7 +1,7 @@
 About starlite-jwt
 ==================
 
-Home: https://github.com/starlite-api/jwt-auth
+Home: https://starlite-api.github.io/starlite-jwt/
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/starlite-jwt-fe
 
 Summary: A JWT auth toolkit for Starlite
 
-Development: https://starlite-api.github.io/starlite-jwt/
+Development: https://github.com/starlite-api/jwt-auth
 
 Current build status
 ====================
