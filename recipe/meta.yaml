@@ -1,13 +1,13 @@
 {% set name = "starlite-jwt" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/starlite-jwt-{{ version }}.tar.gz
-  sha256: 3756c194d98bd19bf1f7d9fa050b8046b0e6338a1d8fc6e075f60b5a30475925
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 53b8bf35db63249dcc26275412f8aa5deb43365a14a7e1a31cc15b2e951cacdf
 
 build:
   noarch: python
