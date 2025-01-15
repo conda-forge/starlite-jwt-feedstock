@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 53b8bf35db63249dcc26275412f8aa5deb43365a14a7e1a31cc15b2e951cacdf
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.7,<4.0
+    - python {{ python_min }}
   run:
-    - python >=3.7,<4.0
+    - python >={{ python_min }},<4.0
     - cryptography
     - python-jose
     - starlite >=1.24.0
@@ -33,6 +33,7 @@ test:
   requires:
     - picologging
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://starlite-api.github.io/starlite-jwt/
